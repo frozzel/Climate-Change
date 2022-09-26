@@ -12,4 +12,4 @@ function test(){
   );
 }
   test()
-  
+  /// https://openweathermap.org/current ///// api instructions/// https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}/// may need ajust var to work with search/////
