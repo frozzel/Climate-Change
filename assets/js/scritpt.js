@@ -4,6 +4,8 @@ var searchCity= $('#city-imput');
 var buttonSearch = $('#form-submit')
 var ApiKey= "f94e53623ff698447585ddbe3bf5e63b"
 var CurrentTemp= $('#temp');
+var CurrentHumidity = $('#humidity')
+var CurrentWind = $('wind')
 ////// checkout api call ////// test in class app by switching out git repo with weather app api calls/////
  
 // function test(){
@@ -39,9 +41,11 @@ function getCurrentWeather(city){
   }).then(function(response){
     console.log(response);
     var date = new Date(response.dt*1000).toLocaleDateString();
-    $(cityCurrent).html(response.name + "("+date+")");
-    var CurrentTemp = (response.main.temp);
-    console.log(CurrentTemp)
+    $(cityCurrent).html(response.name + " ("+date+")");
+    $(temp).html("Temperature: " + response.main.temp + "°")
+    $(humidity).html("Humidity: "+response.main.humidity+ "%")
+    $(wind).html("Wind: " + response.wind.speed + " MPH")
+   console.log(humidity)
     console.log(date)
 
 
