@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Climate-Change</title>
 </head>
 <body>
-    
-</body>
+    <!-- https://materializecss.com/getting-started.html //  bootstrap way better css docs -->
+    <header>
+        <div class="row deep-purple lighten-1 ">
+            <h1 class="blue-grey-text text-lighten-5   center">Weather Dashboard</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <aside class="col s4 ">
+                <div class="card deep-purple lighten-1 rightcard">
+                    <div class="card-content white-text">
+                      <span class="card-title">Enter a City Name:</span>
+                        <form class="center-align" id="city-form">
+                            <input type="search" class="blue-grey-text text-lighten-5" id="city-imput" aria-label="Search">
+                            <button type="button" class="waves-effect waves-light btn-small " type="submit" id="form-submit">Search<i class="material-icons left">search</i></button>
+                        </form>
+                        <ul class="list-group" id="city-list">
+
+                        </ul>
+                      
+                    </div>
+                   
+                </div>
+            </aside>
+            <div class="card col s8 purple lighten-5 teal-text text-accent-4">
+                <section class="" id="curent" style="display: purple-light-5;">
+                <h2 id="city">City:</h1>
+                <h5 id="date">Date:</h5>
+                <p id="temp">Temp:</p>
+                <p id="humidity:">Humidity:</p>
+                <p id="wind">Wind:</p>
+                </section>
+
+            </div>
+            <div class="row " id="fiveDay">
+                <section class="align-center">
+                    <h3 class="teal-text text-accent-4">5-Day Forecast:</h2>
+                    <div class="card-panel col s2 card deep-purple lighten-1 blue-grey-text text-lighten-5" >
+                        <h2 id="city">City:</h1>
+                            <h5 id="date">Date:</h5>
+                            <p id="temp">Temp:</p>
+                            <p id="humidity:">Humidity:</p>
+                            <p id="wind">Wind:</p>
+                    </div>
+                    <div class="card-panel col s2  deep-purple lighten-1 blue-grey-text text-lighten-5" >
+                        <h2 id="city">City:</h1>
+                            <h5 id="date">Date:</h5>
+                            <p id="temp">Temp:</p>
+                            <p id="humidity:">Humidity:</p>
+                            <p id="wind">Wind:</p>
+                    </div> 
+                    <div class="card-panel col s2  deep-purple lighten-1 blue-grey-text text-lighten-5" >
+                        <h2 id="city">City:</h1>
+                            <h5 id="date">Date:</h5>
+                            <p id="temp">Temp:</p>
+                            <p id="humidity:">Humidity:</p>
+                            <p id="wind">Wind:</p>
+                    </div> 
+                    <div class="card-panel col s2  deep-purple lighten-1 blue-grey-text text-lighten-5" >
+                        <h2 id="city">City:</h1>
+                            <h5 id="date">Date:</h5>
+                            <p id="temp">Temp:</p>
+                            <p id="humidity:">Humidity:</p>
+                            <p id="wind">Wind:</p>
+                    </div> 
+                    <div class="card-panel col s2  deep-purple lighten-1 blue-grey-text text-lighten-5" >
+                        <h2 id="city">City:</h1>
+                            <h5 id="date">Date:</h5>
+                            <p id="temp">Temp:</p>
+                            <p id="humidity:">Humidity:</p>
+                            <p id="wind">Wind:</p>
+                    </div>
+                    
+                </section>
+                
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+        
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/scritpt.js"></script>
+
+
+
+    </body>
 </html>

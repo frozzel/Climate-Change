@@ -1,0 +1,15 @@
+.rightcard {
+    height: max-content;
+}
+/* .leftcard {
+   align-content: top;
+} */
+.card-panel {
+    align-items: center;
+    margin: 10px;
+}
+/* .row {
+    display: flexbox;
+    align-content: center;
+    align-items: stretch;
+} */
