@@ -1,15 +1,12 @@
 .rightcard {
-    height: max-content;
+    height: 325px;
 }
-/* .leftcard {
-   align-content: top;
-} */
-.card-panel {
-    align-items: center;
-    margin: 10px;
+
+.card {
+    border: solid 2px;
+    border-color: aliceblue;
+    
 }
-/* .row {
-    display: flexbox;
-    align-content: center;
-    align-items: stretch;
-} */
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
