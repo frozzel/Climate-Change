@@ -1,12 +1,43 @@
+main {
+    margin: 15px;
+}
 .rightcard {
+    border-radius: 30px;
     height: 325px;
 }
 
 .card {
+    border-radius: 20px;
     border: solid 2px;
-    border-color: aliceblue;
+    border-color: rgb(206, 218, 229);
+    padding: 10px;
     
 }
 header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#form-submit {
+    border-radius: 15px;
+}
+#city-imput {
+    border-radius: 15px;
+}
+.Five {
+    color: rgb(0, 77, 141);
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.spread {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    .spread{
+        flex-direction: column;
+        height: 500px;
+        width: max-content;
+    }
 }
