@@ -23,7 +23,7 @@ Download content folder enjoy!
 ## Usage
 
 
-![Screen Shot](./assets/images/Shot%20.png)
+![Screen Shot](./assets/images/Shot.png)
     
 ## Credits
 Dennis Hickox (https://github.com/frozzel)
