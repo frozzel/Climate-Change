@@ -4,8 +4,15 @@ body{
 }
 nav{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    opacity: .6;
+    /* opacity: .4; */
     margin-bottom: 15px;
+    background-color: transparent;
+    color: aliceblue;
+}
+.navbar-brand{
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
 }
 #form-submit{
     border-radius: 15px;
@@ -16,20 +23,18 @@ nav{
 }
 
 
-/* 
-.bodyempty{
-    height: 300px;
-} */
 
 
 .card {
     border-radius: 20px;
-    opacity: .6;
-    border: solid 2px;
-    border-color: rgb(206, 218, 229);
+    background-color: transparent;
+    /* opacity: .6; */
+    /* border: solid 2px;
+    border-color: rgb(206, 218, 229); */
     padding: 10px;
-    box-shadow: 1px 1px 4px black, 0 0 2px blue, 0 0 5px darkblue;
+    /* box-shadow: 1px 1px 4px black, 0 0 2px blue, 0 0 5px darkblue; */
     margin-bottom: 20px;
+    color: aliceblue;
     
 }
 
