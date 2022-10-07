@@ -8,14 +8,14 @@ var CurrentHumidity = $('#humidity')
 var CurrentWind = $('wind')
 var CurrentIcon =$('#Icon')
 var CurrentDate =$('#date')
-
+console.log(searchCity)
   /// https://openweathermap.org/current /////
 
   /////////////// Search funtion ////////////////
 function getsearch(event){
   event.preventDefault();
   if (searchCity.val().trim()!==""){
-   
+    console.log(searchCity)
     city= searchCity.val().trim();
     console.log(city)
     getCurrentWeather(city);
@@ -34,9 +34,9 @@ function getCurrentWeather(city){
     var UrlIcons= "https://openweathermap.org/img/wn/" + weatherIcon + '@2x.png';
     console.log(UrlIcons)
     var date = new Date(response.dt*1000).toLocaleDateString();
-    $(cityCurrent).html(response.name + "<img src="+UrlIcons+">");
+    $(cityCurrent).html( "<img src="+UrlIcons+">"+response.name);
     $(date1).html(date)
-    $(temp).html("Temperature: " + response.main.temp + "°")
+    $(temp).html("Temp: " + response.main.temp + "°")
     $(humidity).html("Humidity: "+response.main.humidity+ "%")
     $(wind).html("Wind: " + response.wind.speed + " MPH")
     getFiveDay()
