@@ -28,7 +28,7 @@ Download content folder enjoy!
 ## Credits
 Dennis Hickox (https://github.com/frozzel)
 
-Materializecss (https://materializecss.com/getting-started.html)
+BootStrap (https://getbootstrap.com/docs/5.2/utilities/background/)
 
 OpenWeatherMap  (https://openweathermap.org/current)
 
