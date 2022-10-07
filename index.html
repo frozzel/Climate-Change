@@ -5,53 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Climate-Change</title>
 </head>
 <body  class='blue-grey lighten-5'>
-    <!-- https://materializecss.com/getting-started.html //  bootstrap way better css docs -->
-    <header>
-        <div class=" blue-grey darken-4 ">
-            <h1 class="blue-grey-text text-lighten-5   center">Weather Dashboard</h1>
+  <main>
+    <!-- boot header nav -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ">Weather Dashboard</a>
+            <form class="d-flex" role="search"  id="city-form">
+                <input class="form-control me-2" id="city-imput" type="search" placeholder="Enter a City Name" aria-label="Search">
+                <button class="btn btn-outline-info" id="form-submit" type="submit">Search</button>
+            </form>
         </div>
-    </header>
-    <main >
+    </nav>
+    <!-- Set up doc -->
     <div class="container-fluid">
-        <div class="row">
-            <aside class="col s4 ">
-                <div class="card light-blue darken-4 rightcard">
-                    <div class="card-content white-text">
-                      <span class="card-title">Enter a City Name:</span>
-                        <form class="center-align" id="city-form">
-                            <input type="search" class="blue-grey-text text-lighten-5" id="city-imput" aria-label="Search">
-                            <button type="button" class="waves-effect waves-light btn-small blue-grey lighten-5 blue-grey-text text-darken-3" type="submit" id="form-submit">Search<i class="material-icons left blue-grey-text text-darken-3">search</i></button>
-                        </form>
-                        <ul class="list-group" id="city-list">
-
-                        </ul>
-                      
-                    </div>
-                   
+        <!-- Content here -->
+        
+        <div class="card">
+            <div class="row g-0 text-left">
+                <div class="col-3 col-md-3">
+                    <h2 id="cityCurrent" img src="" alt="Weather Icon" id="Icon"></h1>
+                    
                 </div>
-            </aside>
-            <div class="card col s8 light-blue darken-4 blue-grey-text text-lighten-5">
-                <section class="" id="curent" style="display: purple-light-5;">
-                <h2 id="cityCurrent" img src="" alt="Weather Icon" id="Icon"></h1>
-                 <!-- <h1 img src="" alt="Weather Icon" id="Icon"></h1>    -->
-                <h5 id="date1"></h5>
-                <p id="temp">Temp:</p>
-                <p id="humidity">Humidity:</p>
-                <p id="wind">Wind:</p>
-                </section>
-
-            </div>
-
+                <div class="col-6 col-md-4">
+                   
+                    <h4 id="date1"></h4>
+                    <h4 id="temp">Temp:</h4>
+                    
+                </div>
+                <div class="col-6 col-md-4">
+                    <h4 id="humidity">Humidity:</h4>
+                    <h4 id="wind">Wind:</h4>
+                </div>
+              </div>
         </div>
-        <div class="Five">Five Day Forcast</div>
-        <div class="row spread">
+        <!-- <div class="row bodyempty"></div> -->
+
+
+     <div class="row spread">
+      
+        <div class="card" style="width: 18rem;">
             
-            <div class="card col s2 light-blue darken-4 blue-grey-text text-lighten-5">
+            <div class="card-body">
                 <h2 id="cityCurrent1" img src="" alt="Weather Icon" id="Icon"></h1>
                     <!-- <h1 img src="" alt="Weather Icon" id="Icon"></h1>    -->
                    <h5 id="date2"></h5>
@@ -59,15 +60,21 @@
                    <p id="humidity1">Humidity:</p>
                    <p id="wind1">Wind:</p>
             </div>
-            <div class="card col s2 light-blue darken-4 blue-grey-text text-lighten-5">
-                <h2 id="cityCurrent2" img src="" alt="Weather Icon" id="Icon"></h1>
-                    <!-- <h1 img src="" alt="Weather Icon" id="Icon"></h1>    -->
-                   <h5 id="date3"></h5>
-                   <p id="temp2">Temp:</p>
-                   <p id="humidity2">Humidity:</p>
-                   <p id="wind2">Wind:</p>
+        </div>        
+        <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
+              <h2 id="cityCurrent2" img src="" alt="Weather Icon" id="Icon"></h1>
+                <!-- <h1 img src="" alt="Weather Icon" id="Icon"></h1>    -->
+               <h5 id="date3"></h5>
+               <p id="temp2">Temp:</p>
+               <p id="humidity2">Humidity:</p>
+               <p id="wind2">Wind:</p>
             </div>
-            <div class="card col s2 light-blue darken-4 blue-grey-text text-lighten-5">
+        </div>
+        <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
                 <h2 id="cityCurrent3" img src="" alt="Weather Icon" id="Icon"></h1>
                     <!-- <h1 img src="" alt="Weather Icon" id="Icon"></h1>    -->
                    <h5 id="date4"></h5>
@@ -75,7 +82,10 @@
                    <p id="humidity3">Humidity:</p>
                    <p id="wind3">Wind:</p>
             </div>
-            <div class="card col s2 light-blue darken-4 blue-grey-text text-lighten-5">
+        </div>
+        <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
                 <h2 id="cityCurrent4" img src="" alt="Weather Icon" id="Icon"></h1>
                     <!-- <h1 img src="" alt="Weather Icon" id="Icon"></h1>    -->
                    <h5 id="date5"></h5>
@@ -83,7 +93,10 @@
                    <p id="humidity4">Humidity:</p>
                    <p id="wind4">Wind:</p>
             </div>
-            <div class="card col s2 light-blue darken-4 blue-grey-text text-lighten-5">
+        </div>
+        <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
                 <h2 id="cityCurrent5" img src="" alt="Weather Icon" id="Icon"></h1>
                     <!-- <h1 img src="" alt="Weather Icon" id="Icon"></h1>    -->
                    <h5 id="date6"></h5>
@@ -92,12 +105,14 @@
                    <p id="wind5">Wind:</p>
             </div>
         </div>
+     </div>
+
     </div>
 </main>    
 
 
     <script src="https://code.jquery.com/jquery.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
     <script src="./assets/js/scritpt.js"></script>
 
 
