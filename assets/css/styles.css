@@ -1,6 +1,8 @@
 body{
     background-image: url('../images/pexels-pixabay-33545.jpg');
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
